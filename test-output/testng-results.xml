@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="80654" started-at="2020-05-17T05:38:22Z" finished-at="2020-05-17T05:39:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="80654" started-at="2020-05-17T05:38:22Z" finished-at="2020-05-17T05:39:43Z">
+      <class name="test.deleteFromCart">
+        <test-method status="PASS" signature="checkurl()[pri:0, instance:test.deleteFromCart@68c4039c]" name="checkurl" is-config="true" duration-ms="10134" started-at="2020-05-17T11:08:22Z" finished-at="2020-05-17T11:08:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkurl -->
+        <test-method status="PASS" signature="deleteFromCartProduct()[pri:0, instance:test.deleteFromCart@68c4039c]" name="deleteFromCartProduct" duration-ms="10766" started-at="2020-05-17T11:08:32Z" finished-at="2020-05-17T11:08:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteFromCartProduct -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.deleteFromCart@68c4039c]" name="teardown" is-config="true" duration-ms="1318" started-at="2020-05-17T11:08:43Z" finished-at="2020-05-17T11:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.deleteFromCart -->
+      <class name="test.addProductsToCart">
+        <test-method status="PASS" signature="checkurl()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="checkurl" is-config="true" duration-ms="8404" started-at="2020-05-17T11:08:44Z" finished-at="2020-05-17T11:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkurl -->
+        <test-method status="PASS" signature="addCellPhoneToCart()[pri:1, instance:test.addProductsToCart@ae45eb6]" name="addCellPhoneToCart" duration-ms="12292" started-at="2020-05-17T11:08:53Z" finished-at="2020-05-17T11:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCellPhoneToCart -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="teardown" is-config="true" duration-ms="868" started-at="2020-05-17T11:09:05Z" finished-at="2020-05-17T11:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="checkurl()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="checkurl" is-config="true" duration-ms="8421" started-at="2020-05-17T11:09:06Z" finished-at="2020-05-17T11:09:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkurl -->
+        <test-method status="PASS" signature="addUsedPhone()[pri:2, instance:test.addProductsToCart@ae45eb6]" name="addUsedPhone" duration-ms="10717" started-at="2020-05-17T11:09:14Z" finished-at="2020-05-17T11:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUsedPhone -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="teardown" is-config="true" duration-ms="986" started-at="2020-05-17T11:09:25Z" finished-at="2020-05-17T11:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="checkurl()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="checkurl" is-config="true" duration-ms="7649" started-at="2020-05-17T11:09:26Z" finished-at="2020-05-17T11:09:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkurl -->
+        <test-method status="PASS" signature="verifytheadditionofcost()[pri:3, instance:test.addProductsToCart@ae45eb6]" name="verifytheadditionofcost" duration-ms="8110" started-at="2020-05-17T11:09:34Z" finished-at="2020-05-17T11:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheadditionofcost -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.addProductsToCart@ae45eb6]" name="teardown" is-config="true" duration-ms="925" started-at="2020-05-17T11:09:42Z" finished-at="2020-05-17T11:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.addProductsToCart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
