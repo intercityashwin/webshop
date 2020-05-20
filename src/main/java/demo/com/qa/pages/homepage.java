@@ -20,6 +20,33 @@ public class homepage extends testbase{
 	@FindBy(xpath="//span[contains(text(),'Shopping cart')]")
 	WebElement shpcrtlink; 
 	
+	@FindBy(xpath="//button[@id='checkout']")
+	WebElement checkoutlink;
+	
+	@FindBy(xpath="//input[@id='termsofservice']")
+	WebElement termsofService; 
+	
+	@FindBy(xpath="//div[@id='billing-buttons-container']//input[@class='button-1 new-address-next-step-button']")
+	WebElement continuelink;
+	
+	@FindBy(xpath="//div[@id='shipping-buttons-container']//input[@class='button-1 new-address-next-step-button']")
+	WebElement continuelinkpost; 
+	
+	@FindBy(xpath="//input[@class='button-1 shipping-method-next-step-button']")
+	WebElement continuepostpost; 
+	
+	@FindBy(xpath="//input[@class='button-1 payment-method-next-step-button']")
+	WebElement continuepayment; 
+	
+	@FindBy(xpath="//input[@class='button-1 payment-info-next-step-button']")
+	WebElement infonextcontuniue;
+	
+	@FindBy(xpath="//input[@class='button-1 confirm-order-next-step-button']")
+	WebElement cnfordercontinue; 
+	
+	@FindBy(xpath="//strong[contains(text(),'Your order has been successfully processed!')]")
+	WebElement verfiymessageorderplaced; 
+	
 	public homepage(){
 		PageFactory.initElements(driver, this);
 	}
@@ -67,4 +94,40 @@ public class homepage extends testbase{
 		shpcrtlink.click();
 	}
 
+	
+	public void clickcheckout(){
+		checkoutlink.click();
+	}
+	
+	public void termsofServiceclick(){
+		termsofService.click();
+	}
+	
+	public void continuelink(){
+		continuelink.click();
+	}
+	
+	public void continuelinkpost(){
+		continuelinkpost.click();
+	}
+	public void continuelinkpostpost(){
+		continuepostpost.click();
+	}
+	
+	public void continuepayment(){
+	continuepayment.click();
+	}
+	
+	public void infonextcontuniue(){
+		infonextcontuniue.click();
+	}
+	
+	public void cnfordercontinue(){
+		cnfordercontinue.click();
+	}
+	
+	public boolean verfiymessageorderplaced(){
+		return (verfiymessageorderplaced.isDisplayed()); 
+	}
+	
 }

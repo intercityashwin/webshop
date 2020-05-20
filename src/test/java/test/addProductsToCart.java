@@ -3,6 +3,7 @@ package test;
 import java.util.HashMap;
 
 import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -161,6 +162,42 @@ public class addProductsToCart extends testbase{
 		test.log(LogStatus.PASS, "Logout the Application");
 	}
 
+	
+	@Test(priority=4)
+	public void verifytheoderplacemessage(){
+		report = testUtil.getInstance();
+		test = report.startTest("Place the Order and Fetch the order ID"); 
+		lgnstrtpage = new loginPage(); 
+		lgncredpage = lgnstrtpage.clickloginlink();
+		lgncredpage.setusername(prop.getProperty("username"));
+		lgncredpage.setpassword(prop.getProperty("password"));
+		hmpage = lgncredpage.clicklogin();
+		test.log(LogStatus.INFO, "Log in To the Application");
+		testUtil.takeScreenShot(driver, test);
+		hmpage.clickShoppingcrt();
+		test.log(LogStatus.INFO, "Navigate to Shopping Cart");
+		hmpage.termsofServiceclick();
+		hmpage.clickcheckout();
+		hmpage.continuelink();
+		hmpage.continuelinkpost();
+		hmpage.continuelinkpostpost();
+		hmpage.continuepayment();
+		hmpage.infonextcontuniue();
+		hmpage.cnfordercontinue();
+		test.log(LogStatus.INFO, "Navigate To Final Submit Page");
+		boolean msg = hmpage.verfiymessageorderplaced();
+			if (msg==true){
+				testUtil.takeScreenShot(driver, test);
+				String orderID = driver.findElement(By.xpath("//li[contains(text(),'Order number')]")).getText(); 
+				String str  []= orderID.split(":");
+				test.log(LogStatus.PASS, "Order Placed Successfully !!!! with order ID - > "+ str[1]);
+			}else{
+				test.log(LogStatus.FAIL, "Order not placed !!!!");
+				testUtil.takeScreenShot(driver, test);
+			}
+		hmpage.logoutapplication();
+		test.log(LogStatus.PASS, "Logout the Application");
+	}
 	
 	@AfterMethod
 	public void teardown(){	

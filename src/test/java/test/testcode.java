@@ -30,7 +30,13 @@ public class testcode {
 		
 		driver.findElement(By.xpath("//span[contains(text(),'Shopping cart')]")).click();
 		
-		int rocnt = driver.findElements(By.xpath("//table[@class='cart']//tbody/tr")).size();
+		driver.findElement(By.xpath("//button[@id='checkout']")).click();
+		
+		driver.findElement(By.xpath("//span[@class='ui-button-icon-primary ui-icon ui-icon-closethick']")).click();
+		
+		driver.findElement(By.xpath("//input[@id='termsofservice']")).click();
+		
+		/*int rocnt = driver.findElements(By.xpath("//table[@class='cart']//tbody/tr")).size();
 		double arr[]  = new double [rocnt]; 
 		int indexvalue; 
 		for(int i=1;i<=rocnt;i++){
@@ -64,7 +70,8 @@ public class testcode {
 		double prodprocevalue = Double.valueOf(prodprice); 
 			if (prodprocevalue==sum){
 				System.out.println("VALIDATION IS PASSED");
-			}
+			}*/
+			
 		
 		
 	}
